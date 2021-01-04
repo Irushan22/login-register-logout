@@ -12,7 +12,7 @@
             console.log(useremail);
             // var valid = false;
                 $.ajax({
-                  url: "http://127.0.0.1:5000/user/register",
+                  url: "your end point",
                   dataType: 'json',
                   type: "POST",
                   // async: false,
@@ -46,7 +46,7 @@
              var loginpass = $("#loginPassword").val();
            
                  $.ajax({
-                   url: "http://127.0.0.1:5000/user/login",
+                   url: "your end point",
                   //  dataType: 'json',
                    type: "POST",
                    data: {
@@ -73,7 +73,7 @@
         $("#logout").click(function(e){
             e.preventDefault();
                 $.ajax({
-                  url: "http://127.0.0.1:5000/user/logout",
+                  url: "your end point",
                   type: "POST",
                   success: function (result) {
                     if(result.statusCode == '200'){
